@@ -1,0 +1,48 @@
+#carousel {
+    padding-top: 40px;    
+}
+
+.carousel-wrapper {
+    .carousel-inner {
+        background-image: url("../../image/Violet_top_left_wave.png");
+        background-position: bottom;
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 550px;
+        
+
+        .container {
+            padding: 0 100px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+        }
+    }
+}
+
+.carousel-left {
+    p{
+        @include styleText($fs-sm,600,$color-purple)
+    }
+
+    h2 {
+        @include styleText(2.8rem,700,#000)
+    }
+}
+
+
+.carousel-right {
+    img {
+        width: 500px;
+        height: 500px;
+    }
+}
+
+@include responsive("large") {
+    .carousel-inner {
+        .container {
+            flex-direction: column;
+        }
+    }
+}

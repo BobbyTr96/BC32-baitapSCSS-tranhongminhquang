@@ -1,0 +1,438 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#header {
+  position: relative;
+}
+#header .header-bg img {
+  position: absolute;
+  top: 0;
+}
+
+.wrapper .container {
+  padding: 40px 0 100px;
+}
+
+.navbar-brand img {
+  width: 70px;
+  height: 70px;
+}
+
+.navbar {
+  justify-content: space-between;
+  padding: 0;
+  align-items: center;
+}
+
+.left-header {
+  display: flex;
+  align-items: center;
+}
+.left-header .navbar-nav {
+  margin-right: 20px;
+}
+.left-header .navbar-nav .nav-link {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: black;
+  margin-left: 20px;
+  position: relative;
+}
+.left-header .navbar-nav .nav-link:hover {
+  color: #b61984;
+}
+.left-header .navbar-nav .nav-link.active::after {
+  display: block;
+  width: 8px;
+  height: 8px;
+}
+.left-header .navbar-nav .nav-link::after {
+  content: "";
+  width: 0px;
+  height: 0px;
+  border-radius: 50%;
+  position: absolute;
+  background-color: #b61984;
+  bottom: -10px;
+  left: 20px;
+  transition: all 0.2s ease;
+}
+.left-header .navbar-nav .nav-link:hover::after {
+  display: block;
+  width: 10px;
+  height: 10px;
+}
+
+.button-menu .phone-button {
+  background-color: transparent;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 20px;
+  letter-spacing: 0;
+  color: #fff;
+  outline: none;
+  font-size: 12px;
+  font-weight: 600;
+  margin-right: 20px;
+  box-shadow: 0 0 0 3em #b61984 inset;
+  transition: all 300ms ease;
+}
+.button-menu .phone-button i,
+.button-menu .phone-button span {
+  color: #fff;
+}
+.button-menu .phone-button:hover {
+  box-shadow: 0 0 0 1px #ee5b54 inset;
+}
+.button-menu .phone-button:hover i, .button-menu .phone-button:hover span {
+  color: #b61984;
+}
+
+.icon-link a {
+  font-size: 13px;
+  font-weight: 0;
+  color: #000;
+  margin-right: 10px;
+  transition: all 0.5s;
+}
+.icon-link a:hover {
+  color: #b61984;
+}
+
+#carousel {
+  padding-top: 40px;
+}
+
+.carousel-wrapper .carousel-inner {
+  background-image: url("../../image/Violet_top_left_wave.png");
+  background-position: bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 550px;
+}
+.carousel-wrapper .carousel-inner .container {
+  padding: 0 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.carousel-left p {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #b61984;
+}
+.carousel-left h2 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #000;
+}
+
+.carousel-right img {
+  width: 500px;
+  height: 500px;
+}
+
+@media screen and (max-width: 992px) {
+  .carousel-inner .container {
+    flex-direction: column;
+  }
+}
+.list-wrapper {
+  background-image: url("../../image/Wave_White_bottom_right_shape_01.png");
+  background-position: bottom;
+  background-size: contain;
+  background-color: #dcd1f3;
+  background-repeat: no-repeat;
+}
+
+.list-inner .container {
+  padding: 0 100px;
+}
+
+.card-people {
+  border: transparent;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all 0.5s;
+  margin-top: 30px;
+}
+.card-people:hover {
+  box-shadow: 0 30px 30px -10px rgba(0, 0, 0, 0.2);
+}
+
+.list-img {
+  overflow: hidden;
+}
+.list-img .card-img-top {
+  transition: all 0.5s;
+}
+.list-img .card-img-top:hover {
+  transform: scale3d(1.05, 1.05, 1.05);
+}
+
+.card-body {
+  text-align: center;
+}
+.card-body .card-country {
+  font-size: 0.75em;
+  font-weight: 600;
+  color: #b61984;
+}
+.card-body .card-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #000;
+}
+.card-body .card-text {
+  font-size: 0.75em;
+  font-weight: 0;
+  color: #000;
+}
+
+.find-wrapper {
+  background-image: url(../../image/accent_bottom_wave_01.png);
+  background-position: bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.find-wrapper .container {
+  display: flex;
+  justify-content: center;
+}
+
+.card-course {
+  box-shadow: 0 30px 30px -10px rgba(0, 0, 0, 0.2);
+  border: transparent;
+}
+
+.card-body h1 {
+  font-size: 2.55rem;
+  font-weight: 700;
+  color: #000;
+}
+
+.input-name {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.input-name i {
+  color: #b61984;
+  margin-right: 5px;
+  position: absolute;
+  top: 15px;
+  left: 10px;
+}
+.input-name input {
+  outline: none;
+  border: transparent;
+  width: 120px;
+  font-size: 0.8rem;
+  padding-left: 20px;
+}
+.input-name .name-input,
+.input-name .email-input {
+  background-color: transparent;
+  padding: 8px 10px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50px;
+  letter-spacing: 0;
+  width: 100%;
+  position: relative;
+}
+.input-name .name-input {
+  margin-right: 10px;
+}
+
+.language, .note {
+  margin-top: 10px;
+  position: relative;
+}
+.language i, .note i {
+  position: absolute;
+  top: 10px;
+  left: 11px;
+  color: #b61984;
+}
+
+.custom-select {
+  position: relative;
+  background-color: transparent;
+  padding: 5px 10px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50px;
+  letter-spacing: 0;
+  outline: none;
+  padding-left: 40px;
+}
+
+.custom-select:focus {
+  border-color: rgba(0, 0, 0, 0.1);
+  outline: 0;
+  box-shadow: none;
+}
+
+.note textarea {
+  padding-left: 40px !important;
+  background-color: transparent;
+  padding: 5px 10px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  letter-spacing: 0;
+  outline: none;
+}
+
+.btn-course {
+  text-align: start;
+  margin-top: 30px;
+}
+.btn-course button {
+  background-color: transparent;
+  padding: 10px 45px;
+  border: none;
+  border-radius: 30px;
+  letter-spacing: 0;
+  color: #fff;
+  outline: none;
+  font-size: 15px;
+  font-weight: 600;
+  margin-right: 20px;
+  box-shadow: 0 0 0 3em #b61984 inset;
+  transition: all 300ms ease;
+  transition: all 0.5s;
+}
+.btn-course button:hover {
+  box-shadow: 0 0 0 1px #ee5b54 inset;
+  color: #b61984;
+}
+
+@media screen and (max-width: 992px) {
+  .find-inner .container {
+    flex-direction: column;
+  }
+  .name-input,
+.email-input {
+    text-align: start;
+  }
+  .note .textarea {
+    width: 100%;
+  }
+}
+.footer-wrapper {
+  background-image: url("../../image/footer_background.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.container-footer {
+  padding-top: 60px;
+  padding-bottom: 200px;
+}
+.container-footer .contact-header, .container-footer .newl-text, .container-footer .About-text, .container-footer .quick-link .quick-link-text, .quick-link .container-footer .quick-link-text {
+  font-size: 1.55rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 20px;
+}
+.container-footer ul {
+  list-style: none;
+}
+.container-footer ul li {
+  font-size: 0.75em;
+  font-weight: 0;
+  color: #fff;
+  margin-bottom: 10px;
+}
+.container-footer ul li i {
+  margin-right: 10px;
+}
+.container-footer .footer-list {
+  margin-bottom: 40px;
+}
+.container-footer .contact-link a {
+  font-size: 0.75em;
+  font-weight: 0;
+  color: #fff;
+  margin-right: 10px;
+  transition: all 0.5s;
+}
+.container-footer .contact-link a:hover {
+  color: #000;
+}
+
+.quick-link .quick-link-list {
+  display: flex;
+}
+.quick-link .quick-link-list li {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.quick-link .quick-link-list li a {
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.5s;
+}
+.quick-link .quick-link-list li a:hover {
+  opacity: 0.8;
+}
+
+.About-list {
+  display: flex;
+}
+.About-list li {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.About-list li a {
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.5s;
+}
+.About-list li a:hover {
+  opacity: 0.8;
+}
+
+.newl-input .email {
+  background-color: transparent;
+  padding: 5px 10px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50px;
+  letter-spacing: 0;
+  font-size: 0.75em;
+  font-weight: 400;
+  color: #fff;
+  margin-bottom: 10px;
+  outline: none;
+  text-align: center;
+}
+.newl-input .email::-moz-placeholder {
+  color: #fff;
+}
+.newl-input .email:-ms-input-placeholder {
+  color: #fff;
+}
+.newl-input .email::placeholder {
+  color: #fff;
+}
+.newl-input .sub {
+  background-color: transparent;
+  padding: 5px 10px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50px;
+  letter-spacing: 0;
+  font-size: 0.75em;
+  font-weight: 400;
+  color: #fff;
+  outline: none;
+  text-align: center;
+  box-shadow: 0 0 0 3em #fff inset;
+  color: #000;
+  transition: all 0.5s;
+}
+.newl-input .sub:hover {
+  box-shadow: 0 0 0 1px #fff inset;
+  color: #fff;
+}/*# sourceMappingURL=index.css.map */

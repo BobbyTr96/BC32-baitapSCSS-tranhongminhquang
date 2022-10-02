@@ -1,0 +1,18 @@
+// khu vực biến màu sắc 
+$color-purple :#b61984;
+$color-black: black;
+
+
+// khu vực biến font chữ
+
+$fs-exSm: .75em;
+$fs-sm: 1.1rem;
+$fs-md: 1.55rem;
+$fs-lg: 3.8rem;
+
+// responsive
+$breakpoints : ("extra-large" :1200px,
+    "large" :992px,
+    "medium":768px,
+    "small" : 576px,
+)

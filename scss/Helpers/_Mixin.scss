@@ -1,0 +1,30 @@
+@mixin styleText($fs, $fw, $color) {
+    font-size: $fs;
+    font-weight: $fw;
+    color: $color;
+
+}
+
+@mixin styleButton($bg, $pd-y, $pd-x, $bd, $radius, $ls) {
+    background-color: $bg;
+    padding: $pd-y $pd-x;
+    border: $bd;
+    border-radius: $radius;
+    letter-spacing: $ls;
+    
+}
+
+@mixin responsive($screen){
+    // hàm map-has-key là hàm kiểm tra trong biến map có key mà chúng ta cần tìm hay ko => nó trả ra giá trị boolean
+    @if(map-has-key($map: $breakpoints, $key:$screen )){
+        // hàm map-get : Là hàm lấy ra giá trị trong biến map theo tên key mà ta truyền vào
+        $value :map-get($map:$breakpoints , $key:$screen );
+        @media screen and ( max-width: $value){
+            @content;
+        }
+            
+        
+    }@else {
+        @warn " '$screen' kích cỡ màn hình sai"
+    }
+}

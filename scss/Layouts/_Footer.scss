@@ -1,0 +1,127 @@
+
+.footer-wrapper {
+    background-image: url("../../image/footer_background.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container-footer {
+    padding-top: 60px;
+    padding-bottom: 200px;
+
+    .contact-header {
+        @include styleText($fs-md, 600, #fff);
+        margin-bottom: 20px;
+    }
+
+    ul {
+        list-style: none;
+
+        li {
+            @include styleText($fs-exSm, 0, #fff);
+            margin-bottom: 10px;
+
+            i {
+                margin-right: 10px;
+            }
+        }
+    }
+.footer-list {
+    margin-bottom: 40px
+}
+    .contact-link {
+        a {
+            @include styleText($fs-exSm, 0, #fff);
+            margin-right: 10px;
+            transition: all 0.5s;
+
+            &:hover {
+                color: #000;
+            }
+
+        }
+    }
+}
+
+.quick-link {
+
+    .quick-link-text {
+        @extend .contact-header
+    }
+
+    .quick-link-list {
+        display: flex;
+
+        li {
+            border-bottom: 1px solid rgba(0, 0, 0, .1);
+
+            a {
+                text-decoration: none;
+                color: #fff;
+                transition: all 0.5s;
+
+                &:hover {
+                    opacity: .8;
+                }
+            }
+        }
+    }
+}
+
+.About-text {
+    @extend .contact-header;
+}
+
+.About-list {
+    display: flex;
+
+    li {
+        border-bottom: 1px solid rgba(0, 0, 0, .1);
+
+        a {
+            text-decoration: none;
+            color: #fff;
+            transition: all 0.5s;
+
+            &:hover {
+                opacity: .8;
+            }
+        }
+    }
+}
+
+.newl-text {
+    @extend .contact-header
+}
+.newl-input {
+    .email {
+        @include styleButton(transparent, 5px, 10px, 1px solid rgba(0, 0, 0, .1), 50px, 0);
+        @include styleText($fs-exSm, 400, #fff);
+        margin-bottom: 10px;
+        outline: none;
+        text-align: center;
+
+        &::placeholder {
+            //    @include styleText($fs-exSm,400,#fff)
+            color: #fff;
+        }
+    }
+
+    .sub {
+        @include styleButton(transparent, 5px, 10px, 1px solid rgba(0, 0, 0, .1), 50px, 0);
+        @include styleText($fs-exSm, 400, #fff);
+        outline: none;
+        text-align: center;
+        box-shadow: 0 0 0 3em #fff inset;
+        color: #000;
+        transition: all 0.5s;
+
+        &:hover {
+            box-shadow: 0 0 0 1px #fff inset ;
+            color: #fff;
+        }
+
+    }
+}
+

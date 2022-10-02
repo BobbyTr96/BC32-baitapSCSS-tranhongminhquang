@@ -1,0 +1,63 @@
+// #people-list {
+//     position: relative;
+//     top: -170px;
+// }
+
+.list-wrapper {
+    background-image: url("../../image/Wave_White_bottom_right_shape_01.png");
+    background-position:bottom;
+    background-size: contain;
+    background-color: #dcd1f3;
+    background-repeat: no-repeat;
+    // background-attachment: fixed;
+}
+
+.list-inner {
+    .container {
+        padding: 0 100px;
+    }
+}
+
+.card-people {
+    border: transparent;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.5s;
+    margin-top: 30px;
+   
+
+    &:hover {
+        box-shadow: 0 30px 30px -10px rgb(0 0 0 / 20%);
+    }
+}
+
+
+.list-img {
+    overflow: hidden;
+
+    .card-img-top {
+        transition: all 0.5s;
+    }
+
+    .card-img-top:hover {
+        transform: scale3d(1.05, 1.05, 1.05);
+    }
+}
+
+
+.card-body {
+    text-align: center;
+
+    .card-country {
+        @include styleText($fs-exSm, 600, $color-purple)
+    }
+
+    .card-title {
+        @include styleText($fs-sm, 600, #000)
+    }
+
+    .card-text {
+        @include styleText($fs-exSm, 0, #000)
+    }
+
+}

@@ -1,0 +1,14 @@
+// base
+@import "./scss/base/reset";
+
+// helper
+@import "./scss/Helpers/Variables";
+@import "./scss/Helpers/Mixin";
+
+// lay out
+@import "./scss/Layouts/Header";
+@import "./scss/Layouts/Carousel";
+@import "./scss/Layouts/People-List";
+@import "./scss/Layouts/Find-course";
+@import "./scss/Layouts/Footer";
+
